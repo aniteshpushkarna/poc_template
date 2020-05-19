@@ -13,7 +13,7 @@
     }
   },
   "variables": {
-    "virtualMachineTemplate": "[https://raw.githubusercontent.com/aniteshpushkarna/poc_template/master/virtualMachines.json, parameters('deploymentContext').sasToken)]",
+    "virtualMachineTemplate": "['https://raw.githubusercontent.com/aniteshpushkarna/poc_template/master/virtualMachines.json', parameters('deploymentContext').sasToken)]",
     "templateUniqueString": "[uniqueString(concat(string(parameters('deploymentContext')), string(parameters('virtualMachines')), string(parameters('secrets'))))]"
   },
   "resources": [
